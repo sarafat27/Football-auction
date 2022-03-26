@@ -1,0 +1,32 @@
+.player-box{
+      background-color: gray;
+      height: 470px;
+      width: 300px;
+      margin: 20px;
+      position: relative;
+      border-radius: 20px;
+}
+.player-box img{
+    margin-top: 15px;
+    padding-left: 15px;
+    height: 300px;
+    width: 270px;    
+}
+.player-info{
+    padding-left: 15px; 
+    color: black;
+}
+.player-box button{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.player-box button p{
+    margin-right: 7px;
+}
+.player-box button:hover{
+    background-color: lightskyblue;
+}

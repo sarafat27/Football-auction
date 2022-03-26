@@ -18,7 +18,7 @@ const Main = () => {
                 }
             </div>
             <div className='selection-area'>
-
+                <h2>selected players</h2>
             </div>
         </div>
     );
