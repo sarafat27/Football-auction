@@ -1,4 +1,6 @@
 .selection-box{
+    position: sticky;
+    top:0;
     color: black;
     background-color: gray;
     padding-left: 30px;
