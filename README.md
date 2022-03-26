@@ -1,8 +1,8 @@
 # website name:  Football Auction
 
-My website link is [click here](https://github.com/Programming-Hero-Web-Course4/lucky-one-sarafat27)
+My website link is [https://sage-flan-1698f7.netlify.app/](https://sage-flan-1698f7.netlify.app/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 
 ## Available Scripts
 
