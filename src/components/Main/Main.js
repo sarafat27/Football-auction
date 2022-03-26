@@ -24,8 +24,7 @@ const Main = () => {
     }
 
     const clearCart = () => {
-        const empty = [];
-        setName(empty)
+        setName([]);
     }
 
     return (
