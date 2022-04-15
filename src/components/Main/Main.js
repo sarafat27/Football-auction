@@ -13,8 +13,15 @@ const Main = () => {
     }, [])
 
     const addToCart = (selectedPlayerName) => {
-        const orders = [...name, selectedPlayerName];
-        setName(orders)
+        const exist = name.find(previous => previous === selectedPlayerName);
+        if (!exist) {
+            const orders = [...name, selectedPlayerName];
+            if (orders.length > 4) {
+                alert('you can not add more than four players')
+                return;
+            }
+            setName(orders)
+        }
     }
 
     const showOne = () => {
@@ -25,6 +32,12 @@ const Main = () => {
 
     const clearCart = () => {
         setName([]);
+        setLucky([]);
+    }
+
+    const deleteItem = (deletedName) => {
+        const remaining = name.filter(previous => previous !== deletedName)
+        setName(remaining)
     }
 
     return (
@@ -35,7 +48,7 @@ const Main = () => {
                 }
             </div>
             <div className='selection-area'>
-                <Cart lucky={lucky} clear={clearCart} names={name} showOne={showOne}></Cart>
+                <Cart lucky={lucky} clear={clearCart} names={name} showOne={showOne} getDelete={deleteItem}></Cart>
             </div>
         </div>
     );
